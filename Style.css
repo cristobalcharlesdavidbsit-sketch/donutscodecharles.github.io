@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #fff8f2;
+    text-align: center;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: rgba(217, 160, 102, 0.95);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #5a3a29;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                url("bg/LILDONUTS.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 55px;
+    -webkit-text-stroke: 2px white;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #d9a066;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #5a3a29;
+}
+
+/* MENU PAGE */
+.menu-title {
+    font-size: 40px;
+    color: #5a2e1f;
+    margin: 50px 0 30px;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 85%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+th {
+    background-color: #d9a066;
+    color: white;
+    padding: 15px;
+}
+
+td {
+    padding: 15px;
+    color: #5a3a29;
+}
+
+tr:hover {
+    background-color: #fff3e6;
+}
+
+td img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+/* About & Contact content box */
+.content {
+    max-width: 850px;
+    margin: 100px auto;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.80);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
+.content h1 {
+    font-size: 45px;
+    color: #5a2e1f;
+    margin-bottom: 25px;
+}
+
+.content h2 {
+    margin-top: 30px;
+    font-size: 28px;
+    color: #5a2e1f;
+}
+
+/* Paragraph */
+.content p {
+    font-size: 18px;
+    color: #5a3a29;
+    line-height: 1.7;
+}
+
+/* Contact form */
+form {
+    margin-top: 20px;
+}
+
+/* Inputs */
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #d9a066;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Focus effect */
+form input:focus,
+form textarea:focus {
+    border-color: #5a3a29;
+    box-shadow: 0 0 8px rgba(90, 58, 41, 0.3);
+}
+
+/* Button fix */
+button.btn {
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+body {
+    min-height: 100vh;
+    background-image: url("bg/LILDONUTS.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    opacity: 1.0;
+}
+table td a img {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+table td a img:hover {
+    transform: scale(1.1);
+}
+.menu-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.menu-link img {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.menu-link img:hover {
+    transform: scale(1.1);
+}
+
+.order-text {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #5a3a29;
+    font-weight: 500;
+}
+.content {
+    text-align: center;
+    padding: 40px;
+}
+
+.flavor-img {
+    width: 250px;
+    margin: 20px 0;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #5a2e1f;
+}
+
+.dropdown-check {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.dropdown-btn {
+    padding: 10px 18px;
+    border-radius: 12px;
+    border: 1px solid #d9a066;
+    background: white;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #fff;
+    min-width: 240px;
+    border: 1px solid #d9a066;
+    border-radius: 12px;
+    padding: 12px;
+    text-align: left;
+    z-index: 1;
+}
+
+.dropdown-content label {
+    display: block;
+    margin: 6px 0;
+}
+
+.dropdown-check:hover .dropdown-content {
+    display: block;
+}
+
+.qty {
+    width: 80px;
+    padding: 6px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #d9a066;
+}
+
+.btn {
+    padding: 10px 25px;
+    background-color: #d2691e;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #a0522d;
+}
+.btn-secondary {
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background-color: #222;
+}
